@@ -51,15 +51,15 @@ file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
 
 $mail = new PHPMailer;
 // $mail->IsMail();
-$mail->IsSendmail();
-// $mail->isSMTP();
-// $mail->SMTPDebug = 0;
+// $mail->IsSendmail();
+$mail->isSMTP();
+$mail->SMTPDebug = 0;
 $mail->Debugoutput = 'html';
 
-// $mail->Host = 'mail.clinicasantaluciasalta.com';
-// $mail->Port = 2525;
-// $mail->SMTPAuth = true;
-// $mail->SMTPSecure = false;
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'tls';
 // $mail->SMTPAutoTLS = false;
 // $mail->SMTPOptions = array(
 //     'ssl' => array(
@@ -68,13 +68,13 @@ $mail->Debugoutput = 'html';
 //         'allow_self_signed' => true
 //     )
 // );
-// $mail->Username = 'info-clinicasantaluciasalta.com';
-// $mail->Password = 'santsalta159';
+$mail->Username = 'sprados@chimpancedigital.com.ar';
+$mail->Password = 'Chimpance951#$';
 $mail->setFrom('sprados@chimpancedigital.com.ar', 'Cognition');
 
 $mail->addReplyTo('sprados@chimpancedigital.com.ar','Cognition');
 
-$mail->addAddress('sdesigncba@gmail.com','Cognition');
+$mail->addAddress('sprados@chimpancedigital.com.ar','Cognition');
 // $mail->addCc('cristiancastro.pr1991@gmail.com','Clínica Santia Lucia');
 // $mail->addCc('quirofanosantaluciasalta@gmail.com','Clínica Santia Lucia');
 $mail->isHTML(true);
