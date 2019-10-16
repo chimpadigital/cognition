@@ -55,7 +55,7 @@ function isInjected($str) {
 // }
 
 // If the form fields are empty, redirect to the error page.
-if (empty($first_name) || empty($email_address)) {
+if (empty($name) || empty($email)) {
 header( "Location: $error_page" );
 }
 
