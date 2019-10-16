@@ -50,24 +50,24 @@ file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
 // $mail->isSMTP();
 
 $mail = new PHPMailer;
-$mail->isSMTP();
-$mail->SMTPDebug = 0;
+// $mail->isSMTP();
+// $mail->SMTPDebug = 0;
 $mail->Debugoutput = 'html';
 
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = 587;
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = 'tls';
+// $mail->Host = 'mail.clinicasantaluciasalta.com';
+// $mail->Port = 2525;
+// $mail->SMTPAuth = true;
+// $mail->SMTPSecure = false;
 // $mail->SMTPAutoTLS = false;
-$mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-    )
-);
-$mail->Username = 'sprados@chimpancedigital.com.ar';
-$mail->Password = 'Chimpance951#$';
+// $mail->SMTPOptions = array(
+//     'ssl' => array(
+//         'verify_peer' => false,
+//         'verify_peer_name' => false,
+//         'allow_self_signed' => true
+//     )
+// );
+// $mail->Username = 'info-clinicasantaluciasalta.com';
+// $mail->Password = 'santsalta159';
 $mail->setFrom('sprados@chimpancedigital.com.ar', 'Cognition');
 
 $mail->addReplyTo('sprados@chimpancedigital.com.ar','Cognition');
