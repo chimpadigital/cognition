@@ -375,7 +375,17 @@ video{height: 100%;}
 
 @media only screen and (min-width:1600px){
     .agency-banner8{background-image:url(../img/bg-banner-11.png);min-height:800px;background-repeat:repeat-y;background-position:0 0;background-size:100%;}
- .t-slider-bg:after{content:"";display:block;width:100%;position:absolute;bottom:-54px;left:0;height:516px;background:url(../img/shape-3.svg) no-repeat center bottom/cover;}
+ /* .t-slider-bg:after{content:"";display:block;width:100%;position:absolute;bottom:-54px;left:0;height:516px;background:url(../img/shape-3.svg) no-repeat center bottom/cover;} */
+ .t-slider-bg:after {
+    bottom: -6%;
+}
+.content {
+    background-image: url(../img/bg/equipo-bg2-xl.png)!important;
+    background-position: top!important;
+}
+figure.snip0016 h2 {
+    font-size: 25px;}
+    
     .xs-banner.agency-banner4 .agency-banner-content-group{
     padding-top: 90px;
 }

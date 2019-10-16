@@ -377,7 +377,7 @@ header .container{padding: 0;max-width: 100%;}
 .works-area{position:relative;z-index:1;padding-bottom:50px;background-image: url(../img/bg/proy-circulo.svg);background-repeat: no-repeat;background-position: right;}
 .single-works{position:relative;margin-right:10px;}
 .works-slides .col-lg-12{padding:0;}
-.works-slides .single-works img{width:auto;max-width:initial;border-radius: 10px;
+.works-slides .single-works img{width:100%;max-width:initial;border-radius: 10px;
 }
 .single-works .icon svg{width:19px;}
 .single-works .icon:hover{background:#44ce6f;color:#ffffff;}
@@ -2504,17 +2504,19 @@ color: red;
 
 .circulos{
     position: absolute;
-    bottom: 16%;
+    bottom: 13%;
     left: 0px;
     z-index: -1;
     opacity: .6;
+    width: 46%;
 }
 
 .circulos-separador{
     position: absolute;
     left: 0px;
-    bottom: 5%;
+    bottom: -1%;
     z-index: -1;
+    width: 100%;
 }
 .mb-100{margin-top: -100%;}
 .equipo-bg{
