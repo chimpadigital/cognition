@@ -50,6 +50,7 @@ file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
 // $mail->isSMTP();
 
 $mail = new PHPMailer;
+$mail->IsMail();
 // $mail->isSMTP();
 // $mail->SMTPDebug = 0;
 $mail->Debugoutput = 'html';
