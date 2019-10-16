@@ -50,9 +50,9 @@ function isInjected($str) {
 }
 
 // If the user tries to access this script directly, redirect them to the feedback form,
-if (!isset($_REQUEST['email_address'])) {
-header( "Location: $feedback_page" );
-}
+// if (!isset($_REQUEST['email_address'])) {
+// header( "Location: $feedback_page" );
+// }
 
 // If the form fields are empty, redirect to the error page.
 elseif (empty($first_name) || empty($email_address)) {
