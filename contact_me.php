@@ -52,31 +52,30 @@ file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
 $mail = new PHPMailer;
 // $mail->IsMail();
 // $mail->IsSendmail();
-// $mail->isSMTP();
+$mail->isSMTP();
 $mail->SMTPDebug = 4;
 $mail->Debugoutput = 'html';
 
-// $mail->Host = 'smtp.gmail.com';
-// $mail->Port = 587;
-// $mail->SMTPAuth = true;
-// $mail->SMTPSecure = 'tls';
-// $mail->SMTPAutoTLS = false;
-// $mail->SMTPOptions = array(
-//     'ssl' => array(
-//         'verify_peer' => false,
-//         'verify_peer_name' => false,
-//         'allow_self_signed' => true
-//     )
-// );
-// $mail->Username = 'sprados@chimpancedigital.com.ar';
-// $mail->Password = 'Chimpance951#$';
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->SMTPSecure = 'tls';
+$mail->SMTPAutoTLS = false;
+$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+);
+$mail->Username = 'sprados@chimpancedigital.com.ar';
+$mail->Password = 'Chimpance951#$';
 $mail->setFrom('sprados@chimpancedigital.com.ar', 'Cognition');
 
 $mail->addReplyTo('sprados@chimpancedigital.com.ar','Cognition');
 
-$mail->addAddress('sdesigncba@gmail.com','Cognition');
-// $mail->addCc('cristiancastro.pr1991@gmail.com','Clínica Santia Lucia');
-// $mail->addCc('quirofanosantaluciasalta@gmail.com','Clínica Santia Lucia');
+$mail->addAddress('sprados@chimpancedigital.com.ar','Cognition');
+
 $mail->isHTML(true);
 $mail->Subject = $email_subject;
 $mail->Body    = $email_message2;
@@ -98,15 +97,15 @@ if (!$mail->send()) {
 //$mail_enviado = @mail($email_to, utf8_decode($email_subject), utf8_decode($email_message), $headers);
 
 
-// if($mail_enviado)
-// {
-// echo "<script>location.href='thank_you.html';</script>";
+if($mail_enviado)
+{
+echo "<script>location.href='thank_you.html';</script>";
 
-// }
-// else
-// {
-// 	echo "no se pudo enviar" ;
-// }
+}
+else
+{
+	echo "no se pudo enviar" ;
+}
 
 // Envia un e-mail para el remitente, agradeciendo la visita en el sitio, y diciendo que en breve el e-mail sera respondido. 
 // $mensaje2  = "Hola" . $_POST['name'] . ". Gracias por contactarnos. Un asesor se comunicará con usted a la brevedad..."; 
