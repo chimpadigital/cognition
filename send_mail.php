@@ -17,9 +17,9 @@ $thankyou_page = "thank_you.html";
 This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
-$email = $_REQUEST['email_address'] ;
+$email = $_REQUEST['email'] ;
 $comments = $_REQUEST['comments'] ;
-$name = $_REQUEST['first_name'] ;
+$name = $_REQUEST['name'] ;
 $msg = 
 "Nombre: " . $name . "\n" . 
 "Email: " . $email . "\n" . 
