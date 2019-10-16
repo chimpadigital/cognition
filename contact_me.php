@@ -52,29 +52,29 @@ file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
 $mail = new PHPMailer;
 // $mail->IsMail();
 // $mail->IsSendmail();
-$mail->isSMTP();
-$mail->SMTPDebug = 4;
-$mail->Debugoutput = 'html';
+// $mail->isSMTP();
+// $mail->SMTPDebug = 4;
+// $mail->Debugoutput = 'html';
 
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = 587;
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = 'tls';
-$mail->SMTPAutoTLS = false;
-$mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-    )
-);
-$mail->Username = 'sprados@chimpancedigital.com.ar';
-$mail->Password = 'Chimpance951#$';
+// $mail->Host = 'smtp.gmail.com';
+// $mail->Port = 587;
+// $mail->SMTPAuth = true;
+// $mail->SMTPSecure = 'tls';
+// $mail->SMTPAutoTLS = false;
+// $mail->SMTPOptions = array(
+//     'ssl' => array(
+//         'verify_peer' => false,
+//         'verify_peer_name' => false,
+//         'allow_self_signed' => true
+//     )
+// );
+// $mail->Username = 'sprados@chimpancedigital.com.ar';
+// $mail->Password = 'Chimpance951#$';
 $mail->setFrom('sprados@chimpancedigital.com.ar', 'Cognition');
 
 $mail->addReplyTo('sprados@chimpancedigital.com.ar','Cognition');
 
-$mail->addAddress('sprados@chimpancedigital.com.ar','Cognition');
+$mail->addAddress('sdesigncba@gmail.com','Cognition');
 
 $mail->isHTML(true);
 $mail->Subject = $email_subject;
