@@ -381,11 +381,23 @@ video{height: 100%;}
 }
 .content {
     background-image: url(../img/bg/equipo-bg2-xl.png)!important;
-    background-position: top!important;
+    background-position: bottom!important;
+}
+.content:not(:first-child) {
+    padding: 8em 0 17rem!important;
 }
 figure.snip0016 h2 {
     font-size: 25px;}
-    
+    .featrure2 {
+        margin-top: 0px!important;
+    }
+    .section-title h3 {
+        font-size: 3rem;
+        line-height: 53px;
+    }
+    p {
+        font-size: 18px;
+    }
     .xs-banner.agency-banner4 .agency-banner-content-group{
     padding-top: 90px;
 }
