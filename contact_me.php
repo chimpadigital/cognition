@@ -68,7 +68,7 @@ $mail->Debugoutput = 'html';
 // );
 // $mail->Username = 'info-clinicasantaluciasalta.com';
 // $mail->Password = 'santsalta159';
-$mail->setFrom('info@cognition.com', 'Cognition');
+$mail->setFrom('sprados@chimpancedigital.com.ar', 'Cognition');
 
 $mail->addReplyTo('sprados@chimpancedigital.com.ar','Cognition');
 
