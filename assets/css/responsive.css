@@ -262,7 +262,7 @@ video{height: 100%;}
     .works-slides .single-works img{width:100%!important;max-width:initial;}
     figure.snip0016 {margin: 3px;}
 .t-slider-bg{height:100vh;min-height:100vh;}
-.t-slider-bg:after{display:none;}
+/* .t-slider-bg:after{display:none;} */
 .slider-content{margin-top:0px;text-align:center;}
  .slider-content p{padding-right:0;}
  .section-title h3{font-size:40px;line-height:55px;}
