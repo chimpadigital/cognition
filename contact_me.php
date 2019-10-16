@@ -98,15 +98,15 @@ if (!$mail->send()) {
 //$mail_enviado = @mail($email_to, utf8_decode($email_subject), utf8_decode($email_message), $headers);
 
 
-// if($mail_enviado)
-// {
-// echo "<script>location.href='thank_you.html';</script>";
+if($mail_enviado)
+{
+echo "<script>location.href='thank_you2.html';</script>";
 
-// }
-// else
-// {
-// 	echo "no se pudo enviar" ;
-// }
+}
+else
+{
+	echo "no se pudo enviar" ;
+}
 
 // Envia un e-mail para el remitente, agradeciendo la visita en el sitio, y diciendo que en breve el e-mail sera respondido. 
 // $mensaje2  = "Hola" . $_POST['name'] . ". Gracias por contactarnos. Un asesor se comunicará con usted a la brevedad..."; 
