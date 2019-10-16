@@ -20,7 +20,7 @@ $email_subject = "Consulta web cognition";
 if(!isset($_POST['name']) ||
 !isset($_POST['phone']) ||
 !isset($_POST['email']) ||
-!isset($_POST['obra'])) {
+!isset($_POST['comments'])) {
 
 echo "<b>Ocurrió un error y el formulario no ha sido enviado. </b><br />";
 echo "Por favor, vuelva atrás y verifique la información ingresada<br />";
@@ -100,7 +100,7 @@ if (!$mail->send()) {
 
 if($mail_enviado)
 {
-echo "<script>location.href='thank_you2.html';</script>";
+echo "<script>location.href='thank_you.html';</script>";
 
 }
 else
