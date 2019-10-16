@@ -50,26 +50,26 @@ file_put_contents($fichero, $linea, FILE_APPEND | LOCK_EX);
 // $mail->isSMTP();
 
 $mail = new PHPMailer;
-// $mail->IsMail();
+$mail->IsMail();
 // $mail->IsSendmail();
-$mail->isSMTP();
-$mail->SMTPDebug = 4;
+// $mail->isSMTP();
+// $mail->SMTPDebug = 4;
 $mail->Debugoutput = 'html';
 
-$mail->Host = 'smtp.gmail.com';
-$mail->Port = 587;
-$mail->SMTPAuth = true;
-$mail->SMTPSecure = 'tls';
-$mail->SMTPAutoTLS = false;
-$mail->SMTPOptions = array(
-    'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-    )
-);
-$mail->Username = 'sprados@chimpancedigital.com.ar';
-$mail->Password = 'Chimpance951#$';
+// $mail->Host = 'smtp.gmail.com';
+// $mail->Port = 587;
+// $mail->SMTPAuth = true;
+// $mail->SMTPSecure = 'tls';
+// $mail->SMTPAutoTLS = false;
+// $mail->SMTPOptions = array(
+//     'ssl' => array(
+//         'verify_peer' => false,
+//         'verify_peer_name' => false,
+//         'allow_self_signed' => true
+//     )
+// );
+// $mail->Username = 'sprados@chimpancedigital.com.ar';
+// $mail->Password = 'Chimpance951#$';
 $mail->setFrom('sprados@chimpancedigital.com.ar', 'Cognition');
 
 $mail->addReplyTo('sprados@chimpancedigital.com.ar','Cognition');
