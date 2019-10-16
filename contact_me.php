@@ -74,7 +74,7 @@ $mail->setFrom('sprados@chimpancedigital.com.ar', 'Cognition');
 
 $mail->addReplyTo('sprados@chimpancedigital.com.ar','Cognition');
 
-$mail->addAddress('sprados@chimpancedigital.com.ar','Cognition');
+$mail->addAddress('sdesigncba@gmail.com','Cognition');
 // $mail->addCc('cristiancastro.pr1991@gmail.com','Clínica Santia Lucia');
 // $mail->addCc('quirofanosantaluciasalta@gmail.com','Clínica Santia Lucia');
 $mail->isHTML(true);
