@@ -387,7 +387,12 @@ video{height: 100%;}
     padding: 8em 0 17rem!important;
 }
 figure.snip0016 h2 {
-    font-size: 25px;}
+    font-size: 25px;
+}
+figure.snip0016 p {
+    font-size: 18px;
+
+}
     .featrure2 {
         margin-top: 0px!important;
     }
