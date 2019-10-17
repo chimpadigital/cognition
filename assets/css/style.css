@@ -2554,7 +2554,7 @@ color: red;
 }
 
 .footer-nav {flex-direction: row;}
-.footer-nav .nav-item {position: relative;}
+.footer-nav .nav-item {position: relative;margin-right: 5px;}
 .footer-nav .nav-item .nav-link::before {
     content: '';
     position: absolute;
