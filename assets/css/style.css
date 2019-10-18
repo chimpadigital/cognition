@@ -785,7 +785,7 @@ figure.snip0016:hover figcaption::before{opacity:1;-webkit-transition-delay:0s;t
 .btn-style1{border:1px solid #fff;padding:18px 20px;background:#fff;border-radius:20px;color:#000;font-weight:500;}
 .btn-style1:hover{color:#000;}
 .best-soluction-area a{max-width:200px;margin:0 auto;}
-.soluction-text{display:flex;flex-direction:column;height:430px;justify-content:center;}
+.soluction-text{display:flex;flex-direction:column;height:auto;justify-content:center;}
 .member-section{padding-bottom:50px;}
  .oc-items.circle{position:relative;width:220px;border-radius:50%;}
 .oc-items.circle.effect3.left_to_right .img{-webkit-transform:scale(1) translateX(0);-moz-transform:scale(1) translateX(0);-ms-transform:scale(1) translateX(0);-o-transform:scale(1) translateX(0);transform:scale(1) translateX(0);}
