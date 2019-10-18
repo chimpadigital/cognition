@@ -474,7 +474,7 @@ figure.snip0016 figcaption::before {position: absolute;top: 0;right: 0;bottom: 0
     transition: all 0.5s;
     -webkit-transition-delay: 0.6s;
     transition-delay: 0.6s;
-    /* border-radius: 10px 10px 171px 171px; */
+    border-radius: 10px 10px 0 0;
     height: 25%;
     background-position: bottom;
     background-size: 146%;}
