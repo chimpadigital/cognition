@@ -70,11 +70,11 @@ $mail = new PHPMailer;
 // );
 // $mail->Username = 'sprados@chimpancedigital.com.ar';
 // $mail->Password = 'Chimpance951#$';
-$mail->setFrom('sprados@chimpancedigital.com.ar', 'Cognition');
+$mail->setFrom('info@cognitionbi.com', 'Cognition');
 
-$mail->addReplyTo('sprados@chimpancedigital.com.ar','Cognition');
+$mail->addReplyTo('info@cognitionbi.com','Cognition');
 
-$mail->addAddress('sdesigncba@gmail.com','Cognition');
+$mail->addAddress('info@cognitionbi.com','Cognition');
 
 $mail->isHTML(true);
 $mail->Subject = $email_subject;
